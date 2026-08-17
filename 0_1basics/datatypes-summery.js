@@ -42,14 +42,14 @@
 //stack memory(primitive)or Heap memory(non-primitive)
 
 
-
+//stack memory :- 
 let data="surajpnadey"
 let stack=data
 stack="Adarsh Pathak"
 
 console.log(stack)
 
-
+//Heap memory:-
 let userOne={
     email:"suraj@google.com",
     upi:'suraj@ybl'
