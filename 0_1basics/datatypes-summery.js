@@ -1,5 +1,5 @@
 //Data Type) Primitive : Number,String,Boolean,Null,Symbol,BigInt,undefined
-//Referance(Non-primitive):Array,Function,Object
+
 
 const score=100
 const anotherscore=100.1
@@ -19,7 +19,20 @@ let BigNumber=3475873245734597398n
 console.log(BigNumber)
 console.log(typeof BigNumber)
 
+//Referance(Non-primitive):Array,Function,Object
 
 let box=["suraj","Adarsh","utsav"]
 
-let dataId={}
+let dataId={
+    name:"suraj",
+    rollno:2,
+    mark:2
+}
+
+function myId(){
+    console.log("ashoka")
+}
+myId();
+
+console.log(dataId)
+console.log(box)
