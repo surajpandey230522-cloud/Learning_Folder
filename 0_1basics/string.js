@@ -5,18 +5,18 @@ let num=45;
 // `` => string interpulation
 
 const gameName=new String('suraj')
-// console.log(gameName[0])
-// console.log(gameName.length)
-// console.log(gameName.toLocaleUpperCase())
-// console.log(gameName.charAt(2))
-// console.log(gameName.indexOf("r"))
-// console.log(gameName.toLowerCase())
+console.log(gameName[0])
+console.log(gameName.length)
+console.log(gameName.toLocaleUpperCase())
+console.log(gameName.charAt(2))
+console.log(gameName.indexOf("r"))
+console.log(gameName.toLowerCase())
 
-// const newstring=gameName.substring(0,4)
-// console.log(newstring)
+const newstring=gameName.substring(0,4)
+console.log(newstring)
 
-// const anotherString=gameName.slice(-4,2)
-// console.log(anotherString)
+const anotherString=gameName.slice(-4,2)
+console.log(anotherString)
 
 const newstringOne="  suraj  "
 console.log(newstringOne.trim())
@@ -28,3 +28,4 @@ let sum=url.replace("%20","_")
 console.log(sum)
 
 console.log(gameName.split('-'))
+
