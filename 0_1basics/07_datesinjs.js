@@ -51,4 +51,4 @@ let Getweek=myCreateDate.toLocaleString("default",{
     weekday:"long"
 })
 
-console.log(Getweek)
+console.log(Getweek);
