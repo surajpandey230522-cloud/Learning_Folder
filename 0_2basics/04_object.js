@@ -15,3 +15,13 @@ const text={
 }
 
 console.log(text)
+
+
+const  course={
+    mycourse:"python",
+    favcourse:"js"
+}
+
+const {mycourse:favcourse}=course
+// console.log(mycourse)
+console.log(favcourse)
