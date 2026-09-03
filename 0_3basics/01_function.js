@@ -2,7 +2,7 @@ function myClass(){
 
     setTimeout(()=>{
          console.log("my name is suraj")
-    },6000)
+    },2000)
   
 }
 myClass()
@@ -10,7 +10,8 @@ myClass()
 //....................................................................
 
 function addTonum(a,b){
-    sum=a+b
-    console.log(sum)
+    let result= a+b
+    return result ;
 }
-addTonum(2,3)
+const result=addTonum(2,34)
+console.log("Result:",result)
