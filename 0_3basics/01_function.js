@@ -1,4 +1,16 @@
 function myClass(){
-    console.log("my name is suraj")
-    
+
+    setTimeout(()=>{
+         console.log("my name is suraj")
+    },6000)
+  
 }
+myClass()
+
+//....................................................................
+
+function addTonum(a,b){
+    sum=a+b
+    console.log(sum)
+}
+addTonum(2,3)
