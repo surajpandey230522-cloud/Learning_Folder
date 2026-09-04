@@ -46,3 +46,11 @@ if(true){
       console.log(your+web)
     }
 }
+
+
+function addone(num){
+  return num + 1
+}
+
+let sum=addone(2)
+console.log(sum)
