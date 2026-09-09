@@ -41,7 +41,7 @@ mylist.forEach(element => {
 
 //IIFE..
 (function (){
-    console.log("hellow")
+    //console.log("hellow")
 })//();
 
 
@@ -51,7 +51,7 @@ mylist.forEach(element => {
      console.log(name `${website}`)
     }
     other("welcome adarsh on")
-})();
+})//();
 
 
 //...............................
@@ -60,11 +60,17 @@ mylist.forEach(element => {
 //     let secret = "12345";
 
 //     console.log(secret);
-// })();
+// })//();
 
-// console.log(secret); // Error
+//console.log(secret); // Error
 
 
-( (name)=>{
-    console.log(`${name} is problem solver `)
-})("suraj");
+//( (name)=>{
+  //  console.log(`${name} is problem solver `)
+//})//("suraj");
+
+
+//file handling
+const fs = require("fs");
+let data = fs.readFileSync("student.txt");
+console.log(data);
