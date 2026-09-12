@@ -20,3 +20,10 @@ let initial=0
 const newArray1=c.reduce((accumalator,currentvalue)=> accumalator+currentvalue,initial,)
 
 console.log(newArray1)
+
+
+let array=[12,34,564,76,54,34,546,34,23,454,45]
+
+let text=array.forEach((value)=>{
+    console.log(value)
+})
