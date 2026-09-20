@@ -75,27 +75,76 @@
 
 //slider
 
-let slide=["img1","img2","img3","img4"]
+// let slide=["img1","img2","img3","img4"]
 
-let index=0;
+// let index=0;
 
-console.log(slide[index])
-index++
+// console.log(slide[index])
+// index++
 
-console.log(slide[index])
-index++
-console.log(slide[index])
-index++
-console.log(slide[index])
+// console.log(slide[index])
+// index++
+// console.log(slide[index])
+// index++
+// console.log(slide[index])
 
 
-//question
+// //question
 
-let textBox=["book","pen","copy","desk","light"]
+// let textBox=["book","pen","copy","desk","light"]
 
-let i = 0
+// let i = 0
 
-while(i<textBox.length){
-    console.log(textBox[i])
-    i++
+// while(i<textBox.length){
+//     console.log(textBox[i])
+//     i++
+// }
+
+//...............................................................
+//hard q
+
+// let arr = ["A", "B", "C", "D", "E"];
+
+// let index = 0;
+
+// console.log(arr[index++]);
+// console.log(arr[index++]);
+// console.log(arr[index]);
+// console.log(index);
+
+
+//.............................................................
+
+// let arr = [10, 20, 30, 40, 50];
+
+// let index = 0;
+
+// console.log(arr[++index]);
+// console.log(arr[index++]);
+// console.log(arr[index]);
+// console.log(index);
+
+
+
+// let arr = ["A", "B", "C", "D", "E"];
+
+// let index = 2;
+
+// console.log(arr[index++]);
+// console.log(arr[++index]);
+// console.log(arr[index--]);
+// console.log(arr[index]);
+// console.log(index);
+
+
+
+//...............................................loop
+
+let arr = [10, 20, 30, 40, 50];
+
+let index = arr.length - 1;
+
+while (index >= 0) {
+    console.log(arr[index]);
+    index--;
 }
