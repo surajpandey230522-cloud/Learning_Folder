@@ -140,11 +140,77 @@
 
 //...............................................loop
 
-let arr = [10, 20, 30, 40, 50];
+// let arr = [10, 20, 30, 40, 50];
 
-let index = arr.length - 1;
+// let index = arr.length-1 ;
 
-while (index >= 0) {
+// while (index >= 0) {
+//     console.log(arr[index]);
+//     index--;
+// }
+
+
+// let arr = ["A", "B", "C", "D", "E", "F", "G"];
+
+// let index = 0;
+
+// while (index < arr.length) {
+//     console.log(arr[index]);
+//     index += 3;
+// }
+
+
+
+//hard silder 
+
+// let images = ["A", "B", "C", "D"];
+
+// let index = 0;
+
+// while (index < 10) {
+
+//     console.log(images[index]);
+
+//     index++;
+
+//     if (index === images.length) {
+//         break;
+//     }
+// }
+
+
+
+
+// let arr = ["A", "B", "C", "D", "E"];
+
+// let index = 1;
+
+// while (index < arr.length) {
+
+//     console.log(arr[index]);
+
+//     index++;
+
+//     if (index === 3) {
+//         index--;
+//     }
+
+//     index++;
+// }
+
+
+
+let arr = [10, 20, 30, 40, 50, 60];
+
+let index = 0;
+
+while (index < arr.length) {
+
     console.log(arr[index]);
-    index--;
+
+    index++;
+
+    if (arr[index] === 40) {
+        index++;
+    }
 }
