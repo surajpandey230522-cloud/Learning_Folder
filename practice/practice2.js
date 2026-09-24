@@ -13,3 +13,12 @@ const promise2=new Promise((resolve,reject)=>{
 promise2.catch((Error)=>{
     console.log(Error)
 })
+
+
+async function getData() {
+    let response = await fetch("https://example.com");
+
+    let data = await response.json();
+
+    console.log(data);
+}
