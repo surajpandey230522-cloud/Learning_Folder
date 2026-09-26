@@ -36,3 +36,34 @@ for(let num of arr1 ){
    
 }
  console.log(result)
+
+
+
+
+ let list=[1,2,3,4,5,6,7,8,9,10]
+
+//  for(index=list.length-1;index>=0;index--){
+//      console.log(list[index])
+//  }
+// for(let n in list){
+// for(index=0;index===n%2;index++){
+//  console.log(list[index])
+// }
+// }
+
+// for(i=0;i<=list.length;i++ ){
+//     if(i%2===0){
+//     console.log(list[i])
+//     }
+// }
+
+
+let addition=[10,20,30,40,50,60]
+
+addition.forEach(element => {
+    for(let num of addition){
+        let add=num+num
+     console.log(add)
+    }
+   
+});
