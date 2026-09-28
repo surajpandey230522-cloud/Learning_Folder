@@ -60,10 +60,73 @@ for(let num of arr1 ){
 
 let addition=[10,20,30,40,50,60]
 
-addition.forEach(element => {
-    for(let num of addition){
-        let add=num+num
-     console.log(add)
-    }
-   
-});
+// addition.forEach(element => {
+//     for(let num of addition){
+//         let add=num+num
+//      console.log(add)
+//     }
+//});
+
+//   for( let i=0; i<addition.length;i++){
+//     console.log(addition[i])
+//   }
+
+// let sum=addition.reduce((accumulator,currentValue)=>accumulator+currentValue,0)
+
+// console.log(sum)
+
+
+// let largest=Math.max(...addition)
+// console.log(largest)
+
+// let evenValue=addition.filter(num=>num%2===0).length
+// console.log(evenValue)
+
+// let Num=addition.filter(num=>num>30)
+// console.log(Num)
+
+
+//while loop.....................................//
+//1to 10 in simple way
+ 
+// i=1
+// while(i<=10){
+//     console.log(i)
+//     i++
+// }
+  
+//by using array
+
+//let arr=[1,2,3,4,5,6,7,8,9,10]
+
+// index=0
+// while(index<arr.length){
+//     console.log(arr[index])
+//     index++;
+// }
+
+//10 to 1.......
+
+// index=arr.length-1;
+// while(index>=0){
+//     console.log(arr[index])
+//     index--;
+// }
+
+// i=0
+// while(i<=100){
+//     console.log(i)
+//     i++
+// }
+
+
+let fruit=["mango","banana","kivi","apple"]
+
+let i=0
+ while(i<fruit.length){
+    console.log(fruit[i])
+    i++
+ }
+
+
+
