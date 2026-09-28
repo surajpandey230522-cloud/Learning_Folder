@@ -178,3 +178,20 @@ for(let num of Arr1){
         console.log(num)
     }
 }
+
+//.......................find duplicate value...
+
+
+let yup=[1,1,1,2,2,3,3,4,5,77]
+
+let qwerty=[...new Set(yup)]
+
+console.log(qwerty)
+
+//......................................
+
+let arrYup = [10, 50, 20, 80, 30, 60];
+
+let ip=[...new Set(arrYup)].sort((a,b)=>b-a);
+let secondmax=ip[1]
+console.log(secondmax)
