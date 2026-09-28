@@ -35,7 +35,7 @@ for(let num of arr1 ){
         result.push(num)
    
 }
- console.log(result)
+// console.log(result)
 
 
 
@@ -120,13 +120,61 @@ let addition=[10,20,30,40,50,60]
 // }
 
 
-let fruit=["mango","banana","kivi","apple"]
+// let fruit=["mango","banana","kivi","apple"]
 
-let i=0
- while(i<fruit.length){
-    console.log(fruit[i])
-    i++
- }
+// let i=0
+//  while(i<fruit.length){
+//     console.log(fruit[i])
+//     i++
+//  }
 
 
 
+//by do  while
+//  i=1
+// do{
+//     console.log(i)
+//     i++
+// }while(i<=50)
+
+//for of use .....
+
+let arrr=[5,10,15,20,25]
+
+// for(let num of arrr){
+//   console.log(num)
+// }
+
+for(let num of arrr){
+    let sum=arrr.reduce((accumulator,currentValue)=>accumulator+currentValue,0)
+    //console.log(sum)
+}
+
+let listarr=["A","B","C","D"]
+
+for(let x in listarr){
+    //console.log(x)
+}   // its output is giving index this array
+
+
+let alp=["A","B","C","D"]
+
+for(let x in alp){
+    //console.log(alp[x])
+}
+
+
+//...............................................
+
+
+let Arr1 = [1, 2, 4, 5, 6];
+let Arr2 = [2, 4, 7, 8, 6];
+
+let result1=[]
+
+for(let num of Arr1){
+    if( Arr2.includes(num)&& !result1.includes(num))
+    {
+        console.log(num)
+    }
+}
