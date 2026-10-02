@@ -195,3 +195,5 @@ let arrYup = [10, 50, 20, 80, 30, 60];
 let ip=[...new Set(arrYup)].sort((a,b)=>b-a);
 let secondmax=ip[1]
 console.log(secondmax)
+
+
