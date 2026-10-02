@@ -175,7 +175,7 @@ let result1=[]
 for(let num of Arr1){
     if( Arr2.includes(num)&& !result1.includes(num))
     {
-        console.log(num)
+        //console.log(num)
     }
 }
 
@@ -186,7 +186,7 @@ let yup=[1,1,1,2,2,3,3,4,5,77]
 
 let qwerty=[...new Set(yup)]
 
-console.log(qwerty)
+//console.log(qwerty)
 
 //.................................... find the second largest num...................................
 
@@ -194,6 +194,21 @@ let arrYup = [10, 50, 20, 80, 30, 60];
 
 let ip=[...new Set(arrYup)].sort((a,b)=>b-a);
 let secondmax=ip[1]
-console.log(secondmax)
+//console.log(secondmax)
+
+//.....................................................................................................
+let arrayX=[1,2,3,4,5,6,7,8,9,10]
+
+for(let i of arrayX){
+    //console.log(i)
+}
 
 
+
+let arr12 = [10, 25, 15, 40, 5, 30];
+
+for(let i of arr12){
+    if(i>=20){
+        console.log(i)
+    }
+}
