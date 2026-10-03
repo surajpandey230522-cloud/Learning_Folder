@@ -30,16 +30,26 @@ else{
 
 
 let students = [
-    { name: "Suraj", age: 10 },
-    { name: "Rahul", age: 11 },
+    { name: "Suraj", age: 20 },
+    { name: "Rahul", age: 21 },
     { name: "Aman", age: 19 }
 ];
 
-for(let num of students){
+// for(let num of students){
 
-    if(num.age>=18){
-        console.log(num.name)
-    }
-    // let add=student.name.reduce((accumulator,currentValue)=>accumulator+currentValue,0)
-    // console.log(add)
+//     if(num.age<=18){
+//         console.log(num.name)
+//     }
+//     else if(num.name==="Aman"){
+//         console.log(num)
+//     }
+// }
+
+let i=0
+for(i=0;i<student.length;
+    i+=student[i].age
+){
+    console.log(i)
 }
+
+
