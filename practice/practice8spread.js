@@ -49,7 +49,7 @@ let result=you.map((num)=>num+1)
 //console.log(result)
 
 
-//with string..
+//with string....................
 
 let text=["mango","banana","lichi"]
 
@@ -122,14 +122,21 @@ let result4=Man.filter(num => num.age>=20)
 let num=[1,2,333,5,45,46,65]
 
 // let wt=num.reduce((num,total)=>num+total,0)
-
 // console.log(wt)
 
 //max num find................//
 let qt=num.reduce((max,num)=>{
     if(num>max){
-        return num
+        return num;
     }
     return max;
 },0)
-console.log(qt)
+//console.log(qt);
+
+
+//Find mathod .....................................//
+
+let rdr=[1,2,3,34,56,67,78,89,90]
+
+let cd=rdr.find((num)=>num>20)
+console.log(cd)
