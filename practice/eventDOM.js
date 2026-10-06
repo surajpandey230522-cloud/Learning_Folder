@@ -208,3 +208,17 @@ show.addEventListener("click", function() {
 
     console.log(name);
 });
+
+
+localStorage.setItem("name", "Suraj");
+
+localStorage.getItem("name");
+
+
+localStorage.removeItem("name");
+
+localStorage.clear();
+
+JSON.stringify();
+
+JSON.parse();

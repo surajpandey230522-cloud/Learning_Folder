@@ -31,3 +31,5 @@ function student(name,age,...subject){
 }
 student("suraj",21,"python","java")
 
+
+
