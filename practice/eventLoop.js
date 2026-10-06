@@ -57,7 +57,7 @@ test();
 //console.log(promise);
 
 
-//.........................................................................
+//................................Then().........................................
 
 
 // let promise1=new Promise(()=>(resolve,reject)=>{
@@ -79,3 +79,121 @@ let promise = new Promise(function(resolve, reject) {
 promise.then(function(result) {
     console.log(result);
 });
+
+//.............................catch()..........................................
+
+
+let promise = new Promise(function(resolve, reject) {
+
+    reject("Something went wrong");
+
+});
+
+promise
+    .then(function(result) {
+        console.log(result);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+
+
+    //finally().............................................................//
+
+
+    let promise = new Promise(function(resolve, reject) {
+
+    resolve("Success");
+
+});
+
+promise
+    .then(function(result) {
+        console.log(result);
+    })
+    .catch(function(error) {
+        console.log(error);
+    })
+    .finally(function() {
+        console.log("Promise finished");
+    });
+
+
+
+//     | Method          | Purpose         |
+// | --------------- | --------------- |
+// | `new Promise()` | Create Promise  |
+// | `resolve()`     | Success         |
+// | `reject()`      | Failure         |
+// | `.then()`       | Handle success  |
+// | `.catch()`      | Handle error    |
+// | `.finally()`    | Runs at the end |
+
+
+//for resolve and reject/..........like success and failure.................................................................
+
+
+let promise = new Promise(function(resolve, reject) {
+
+    let age = 20;
+
+    if (age >= 18) {
+        resolve("You are eligible");
+    } else {
+        reject("You are not eligible");
+    }
+
+});
+
+promise
+    .then(function(result) {
+        console.log(result);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+
+//promise changing...................................................................//
+
+
+    Promise.resolve(10)
+    .then(function(num) {
+        return num * 2;
+    })
+    .then(function(num) {
+        return num + 5;
+    })
+    .then(function(result) {
+        console.log(result);
+    });
+
+
+    //fetching api.......................................................//
+
+    fetch("https://example.com/data")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+
+
+    
+
+//                  Promise
+//                 ↓
+//           ┌───────────┐
+//           │  Pending  │
+//           └─────┬─────┘
+//                 ↓
+//        ┌────────┴────────┐
+//        ↓                 ↓
+//    resolve()          reject()
+//        ↓                 ↓
+//   Fulfilled           Rejected
+//        ↓                 ↓
+//     .then()          .catch()
