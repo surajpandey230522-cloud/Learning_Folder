@@ -1,9 +1,8 @@
 
+let header=document.getElementById("title");
+let butt=document.getElementById("btn");
 
-let header=document.getElementById("titel")
-let butt=document.getElementById("btn")
-
-butt.addEventListener(("click",function(){
+butt.addEventListener("click",function(){
     header.innerText="Hello Suraj !"
     header.style.color="skyblue"
-}))
+});
