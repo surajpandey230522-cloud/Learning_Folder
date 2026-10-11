@@ -83,13 +83,13 @@ promise.then(function(result) {
 //.............................catch()..........................................
 
 
-let promise = new Promise(function(resolve, reject) {
+let promise1 = new Promise(function(resolve, reject) {
 
     reject("Something went wrong");
 
 });
 
-promise
+promise1
     .then(function(result) {
         console.log(result);
     })
@@ -101,13 +101,13 @@ promise
     //finally().............................................................//
 
 
-    let promise = new Promise(function(resolve, reject) {
+    let promise2 = new Promise(function(resolve, reject) {
 
     resolve("Success");
 
 });
 
-promise
+promise2
     .then(function(result) {
         console.log(result);
     })
@@ -133,7 +133,7 @@ promise
 //for resolve and reject/..........like success and failure.................................................................
 
 
-let promise = new Promise(function(resolve, reject) {
+let promise3 = new Promise(function(resolve, reject) {
 
     let age = 20;
 
@@ -145,7 +145,7 @@ let promise = new Promise(function(resolve, reject) {
 
 });
 
-promise
+promise3
     .then(function(result) {
         console.log(result);
     })
@@ -171,11 +171,10 @@ promise
     //fetching api.......................................................//
 
     fetch("https://example.com/data")
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(data) {
-        console.log(data);
+    .then( response=>response.json())
+    .then(data => {
+        console.log(data)
+        //here we can use the innertext or inner type mathod to show result on html page after resiving result by api
     })
     .catch(function(error) {
         console.log(error);
