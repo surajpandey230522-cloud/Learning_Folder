@@ -113,7 +113,7 @@ form.addEventListener("submit", function(event) {
 
 
 
-let box = document.getElementById("box");
+let box1 = document.getElementById("box");
 
 let heading = document.createElement("h1");
 
@@ -222,3 +222,42 @@ localStorage.clear();
 JSON.stringify();
 
 JSON.parse();
+
+
+
+//localstorage mathods----------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+
+// let save=document.getElementById("save")
+// let show=document.getElementById("show")
+// let input=document.getElementById("name")
+// let massage=document.getElementById("massage")
+// let remove=document.getElementById("remove")
+// let clear=document.getElementById("clear")
+
+
+save.addEventListener("click",()=>{
+    if(input.value.trim() !==""){
+    localStorage.setItem("name",input.value)
+    alert("save successfully")
+    }
+    else{
+        alert("Enter the name")
+    }
+});
+
+show.addEventListener("click",()=>{
+ let name=localStorage.getItem("name")
+ //massage.innerText=name;
+  console.log(name)
+})
+
+remove.addEventListener("click",()=>{
+   let delet= localStorage.removeItem("name")
+  // massage.innerText=`${delet="delet name"}`
+})
+
+
+clear.addEventListener("click",()=>{
+   let mvp= localStorage.clear("name")
+   //massage.innerText=`name have cleared`
+})
