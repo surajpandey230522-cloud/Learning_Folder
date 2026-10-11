@@ -196,3 +196,6 @@ promise3
 //   Fulfilled           Rejected
 //        ↓                 ↓
 //     .then()          .catch()
+
+
+
