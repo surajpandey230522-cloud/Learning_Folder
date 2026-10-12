@@ -28,5 +28,64 @@ async function myCart(params) {
 
     console.log(data)
 };
-myCart()
+//myCart()
  
+
+
+//api........................................call with async awit function....................................
+
+
+async function sendData() {
+    try{
+    let response= await fetch("",{
+        method:"POST",
+        headers:{
+            "Content-Type": "application/json"
+        },
+        body:JSON.stringify({
+            Name:name,
+            Age:age
+        }),
+
+    }
+);
+
+let data=await response.json()
+console.log(data)
+    }
+    catch(error){
+        console.log(error.massage)
+    }
+
+
+}
+
+
+sendData();
+
+
+//api ....call with promise normal funtion.................................
+
+function postData(){
+    fetch("",{
+        method:"POST",
+        headers:{
+            "Content-Type":"apllication/json"
+        },
+        body:JSON.stringify({
+            Name:"suraj",
+            Age:21
+        }),
+    }).then(response=>{
+        if(!response.ok){
+            throw new Error("Error"+response.status)
+        }
+    })
+    .then(data=>{
+        console.log(data)
+    }).catch(error=>{
+        console.log(error.massage)
+    })
+    
+}
+postData()
