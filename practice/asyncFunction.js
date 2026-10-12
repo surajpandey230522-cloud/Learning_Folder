@@ -32,7 +32,7 @@ async function myCart(params) {
  
 
 
-//api........................................call with async awit function....................................
+//api.......................POST recuest.................call with async awit function....................................
 
 
 async function sendData() {
@@ -64,7 +64,7 @@ console.log(data)
 sendData();
 
 
-//api ....call with promise normal funtion.................................
+//api ....call with promise normal funtion.......POST request..............................//
 
 function postData(){
     fetch("",{
@@ -80,6 +80,7 @@ function postData(){
         if(!response.ok){
             throw new Error("Error"+response.status)
         }
+        return response.json();
     })
     .then(data=>{
         console.log(data)
@@ -89,3 +90,7 @@ function postData(){
     
 }
 postData()
+
+
+
+//api ...................get request .................................
