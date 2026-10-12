@@ -93,4 +93,42 @@ postData()
 
 
 
-//api ...................get request .................................
+//api ...................get request ...........through..async mathod....................//
+
+
+let name=document.getElementById("sum")
+
+async function myCart(){
+ let id=name.value
+ let response=await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+
+ if(!response.ok){
+    throw new Error("Error",response.status)
+ }
+
+ let data=await response.json()
+ console.log(data)
+}
+
+myCart();
+
+
+//api get request by promise mathod.........................................................
+
+let id1=document.getElementById("sam")
+function myTool(){
+    let id2=id1.value
+    fetch(`https://jsonplaceholder.typicode.com/users/${id2}`)
+    .then(response=>{
+        if(!response.ok){
+            throw new Error("Error"+response.status)
+
+        }
+        return response.json();
+
+    }).then(data=>{
+        console.log(data)
+    }).catch(error=>{
+        console.log(error.massage)
+    });
+};
