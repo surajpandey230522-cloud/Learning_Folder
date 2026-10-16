@@ -63,4 +63,20 @@ class student{
 }
 let student1=new student("suraj")
 
-student1.learn()
+student1.learn();
+
+
+class data{
+    constructor(age){
+    this.age=age
+    }
+    Age(){
+        console.log(`${this.age} older`)
+    }
+}
+
+let ag=new data(87)
+ag.Age()
+
+
+
