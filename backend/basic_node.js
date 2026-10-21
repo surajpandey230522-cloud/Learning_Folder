@@ -14,13 +14,24 @@ console.log(process.platform);
 
 //File system........................................
 
-const fs=require("node:fs")
 
- fs.writeFileSync("notes.txt", "learning Node.js");
+// const fs=require("node:fs")
 
-const data = fs.readFileSync("notes.txt", "utf8");
+//  fs.writeFileSync("notes.txt", "learning Node.js");
 
-console.log(data)
+// const data = fs.readFileSync("notes.txt", "utf8");
+
+// console.log(data)
+
+
+//....................................by promise.............
 
 
 
+let fs=require("node:fs/promises")
+
+async function readFile(){
+    let data= await fs.readFile("notes.txt","utf8")
+    console.log(data)
+}
+readFile();

@@ -20,3 +20,16 @@ const server = http.createServer((req, res) => {
 server.listen(3000, () => {
     console.log("Server running at http://localhost:3000");
 });
+
+
+//.......................................................................
+
+
+let http=require("node:http")
+
+const server=http.createServer((req,res)=>{
+res.end("hello from my server ")
+});
+server.listen(3000,()=>{
+    console.log("server running on port 3000")
+})
